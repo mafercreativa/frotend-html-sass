@@ -1,0 +1,18 @@
+$font-primary: 'Montserrat', sans-serif;
+
+@mixin font-regular() {
+  font-family: $font-primary;
+  font-weight: 400;
+}
+
+@mixin font-medium() {
+  font-family: $font-primary;
+  font-weight: 500;
+}
+
+@mixin font-extrabold() {
+  font-family: $font-primary;
+  font-weight: 800;
+}
+
+$font-secundary: 'Grand Hotel', cursive;

@@ -1,0 +1,363 @@
+.main {
+
+  @include mobile {
+    margin-top: 12.5rem;
+  }
+
+  // BANNER PRINCIPAL
+  .banner {
+    width: 100%;
+    height: 58.0rem;
+    background-image: url(../img/back-antonia-mafercreativa.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+
+    @include mobile {
+      height: 35rem;
+    }
+
+    > div {
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to right top, rgba($color-azul, 0.8), rgba($color-azulmorado, 0.8), rgba($color-morado, 0.8));
+    }
+
+    .llamado {
+      text-align: center;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      color: $color-blanco;
+
+      h2 {
+        font-size: 5rem;
+        width: 100%;
+        font-family: $font-secundary;
+        padding-bottom: 2.5rem;
+        max-width: 80rem;
+        text-shadow: 3px 3px 6px rgba($color-primario, 0.2);
+
+        @include mobile {
+          font-size: 3.6rem;
+        }
+
+        @include mintablet {
+          font-size: 9rem;
+        }
+      }
+
+      p {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+        max-width: 60rem;
+        line-height: 4rem;
+
+        @include mobile {
+          line-height: 3rem;
+        }
+
+        @include mintablet {
+          font-size: 2.2rem;
+        }
+      }
+    }
+  }
+
+  // SECCION DE PROCESO
+  .proceso {
+    text-align: center;
+    background-color: $color-back2;
+    color: $color-blanco;
+
+    .triangulo1 {
+      background-image: url(../img/triangulo1.png);
+      background-repeat: no-repeat;
+      background-position: left bottom;
+    }
+
+    .seccion-titulo-contenedor {
+      padding-top: 10rem;
+    }
+
+    p {
+      margin: 0 auto;
+      font-size: 1.8rem;
+      padding: 1.0rem 0 4.0rem;
+      line-height: 3.0rem;
+    }
+
+    .col-contenedor {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding-bottom: 10rem;
+
+      img {
+        border-radius:100%;
+        max-width: 30rem;
+        display: inline-block;
+        z-index: 2;
+        padding-top: 2rem;
+      }
+      .text-imagen {
+        max-width: 40rem;
+        padding: 10rem 4rem 5rem;
+        z-index: 1;
+        margin: -7rem auto 0;
+        width: 90%;
+
+        h3 {
+          padding-bottom: 2rem;
+        }
+      }
+      .block1 {
+        background-color: $color-morado;
+      }
+
+      .block2 {
+        background-color: $color-azulmorado;
+      }
+
+      .block3 {
+        background-color: $color-azul;
+      }
+    }
+  }
+
+  // SECCION DE PROYECTOS
+  .proyectos {
+
+    .triangulo2 {
+      background-image: url(../img/triangulo2.png);
+      background-repeat: no-repeat;
+      background-position: left top;
+    }
+
+    .contenedor {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .imagen {
+      width: 100%;
+      max-width: 57rem;
+      padding: 10rem 1.5rem 3rem;
+
+      @include mintablet {
+        padding: 10rem 1.5rem;
+      }
+
+      img {
+        width: 100%;
+        max-width: 54rem;
+      }
+    }
+
+    .texto-proyectos {
+      text-align: center;
+      padding: 1.5rem 1.5rem 10rem;
+      max-width: 57rem;
+
+      @include mintablet {
+        text-align: left;
+        padding: 10rem 0 10rem 3rem;
+      }
+      p:nth-child(1) {
+        font-size: 2rem;
+        color: $color-primario;
+        font-weight: 500;
+      }
+
+      h3 {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+        color: $color-primario;
+        font-size: 2.8rem;
+        font-weight: 500;
+      }
+
+      p:nth-child(3) {
+        font-size: 1.6rem;
+        color: $color-texto;
+        margin-bottom: 2.5rem;
+        line-height: 3rem;
+      }
+
+      a {
+        font-size: 2rem;
+        color: $color-blanco;
+        font-weight: 800;
+        background-color: $color-azul;
+        padding: 2rem 1.5rem;
+        border-radius: 5rem;
+        text-decoration: none;
+        display: block;
+        max-width: 27.7rem;
+        margin: auto;
+        text-align: center;
+        transition: background-color 0.5s linear;
+
+        @include mintablet {
+          margin: 0;
+        }
+
+        &:hover {
+          background-color: $color-morado;
+        }
+      }
+    }
+  }
+
+  // SECCION DE DULCES PALABRAS
+  .dulces-palabras{
+    text-align: center;
+    background-color: $color-back1;
+
+    p{
+      margin: 0 auto;
+      font-size: 1.8rem;
+      padding: 1rem 0 4rem;
+      line-height: 3rem;
+      color: $color-texto;
+    }
+
+    .imagenes-contenedor {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 3rem;
+      padding-bottom: 10rem;
+
+      img {
+        width: 100%;
+        max-width: 34.5rem;
+      }
+    }
+  }
+}
+
+// CONTACTO - FOOTER
+
+  footer {
+    background-color: $color-back3;
+    color: $color-blanco;
+
+    a {
+      color: $color-blanco;
+      text-decoration: none;
+
+      &:hover {
+        border-bottom: 0.1rem solid $color-azul;
+      }
+    }
+
+    .contenedor{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: space-around;
+
+      .paradarte {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1.5rem;
+        text-align: center;
+
+        @include mintablet {
+          padding-top: 4rem;
+          margin-right: 3rem;
+          padding-left: 3rem;
+          text-align: left;
+        }
+
+        img {
+          width: 100%;
+          max-width: 18rem;
+          height: auto;
+          margin: auto;
+
+          @include mobile {
+            padding-right: 1.5rem;
+          }
+
+          @include mintablet {
+            padding-right: 1.5rem;
+          }
+        }
+
+        p {
+          font-size: 1.6rem;
+          line-height: 2.5rem;
+          padding-bottom: 2rem;
+          max-width: 41rem;
+          width: 100%;
+          margin: auto;
+        }
+      }
+
+      .contactos {
+        padding-bottom: 4rem;
+        text-align: center;
+
+        @include mintablet {
+          padding-top: 4rem;
+          padding-left: 3rem;
+          text-align: left;
+        }
+
+        h3 {
+          color: $color-azul;
+          padding-top: 1.5rem
+        }
+
+        a {
+          font-size: 1.8rem;
+
+          @include mobile {
+            font-size: 2.2rem;
+          }
+
+          @include mintablet {
+            margin: 0;
+          }
+        }
+        .link {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content:center;
+          padding-top: 1rem;
+
+          @include mintablet {
+            justify-content:flex-start;
+          }
+
+          a {
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+
+    .derechos {
+      padding: 4rem 1.5rem;
+      border-top: 0.1rem solid $color-azul;
+      text-align: center;
+      line-height: 2.5rem;
+      font-size: 1.6rem;
+
+      a {
+        color: $color-azul;
+
+      }
+    }
+  }

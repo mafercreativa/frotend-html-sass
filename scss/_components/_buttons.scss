@@ -1,0 +1,11 @@
+.prdt-btn {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  max-width: 26rem;
+  padding: 1.2rem 0;
+  font-size: 1.4rem;
+  @include font-medium();
+  background-color: $color-azul;
+  color: $color-blanco;
+}

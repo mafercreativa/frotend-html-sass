@@ -1,0 +1,58 @@
+// MIXINS
+@import "_mixins/fonts";
+
+@import "_mixins/devices";
+// VARIABLES
+@import "_variables/colors";
+// PARCIALES
+@import "_partials/header";
+
+@import "_partials/content";
+// COMPONENTES
+@import "_components/buttons";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+
+  @include mobile {
+    font-size: 2.3rem;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.seccion-titulo-contenedor {
+  padding-top: 10rem;
+}
+
+img {
+  max-width:  100%;
+  vertical-align: top;
+}
+
+body, html {
+  font-size:10px;
+  @include font-regular();
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 139rem;
+  margin: 0 auto;
+}
